@@ -763,7 +763,7 @@ ol ol ol{list-style-type:disc;}
 .icon-clear-left{padding-left:15px;}
 .icon-clear-right{padding-right:15px;}
 
-.maps{min-height:250px;}
+.maps{min-height:10px;}
 .responsive-video{position:relative; min-height:220px; width:100%; overflow:hidden;}
 .responsive-video iframe, .responsive-video object, .responsive-video embed {
 	position:absolute;
