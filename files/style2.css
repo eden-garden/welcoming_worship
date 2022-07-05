@@ -1209,9 +1209,6 @@ animation-name: slidein;
   align-items: center;
   justify-content: center;
 }
-.map-text{
-  
-}
 
 #thisone {
   position:absolute;
@@ -1330,8 +1327,8 @@ animation-name: slidein;
 
 #cross{
   position: absolute;
-  height: 221px;
-  width: 168px;
+  height: 217px;
+  width: 167px;
 }
 
 #click{
@@ -1369,9 +1366,10 @@ animation-name: slidein;
 }
 
 .hidden2 {
+  margin-left:155px!important;
+  width:0px!important;
   visibility: hidden;
-  width:0px;
-  transition: all 2s ease-in-out;
+  transition: all 2s
 }
 
 #vertical{
