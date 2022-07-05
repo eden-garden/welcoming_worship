@@ -1319,16 +1319,19 @@ animation-name: slidein;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 229px;
-  width: 420px;
+  height: 300px;
 }
 
 #door{
   position: absolute;
+  height: 227px;
+  width: 175px;
 }
 
 #cross{
   position: absolute;
+  height: 221px;
+  width: 168px;
 }
 
 #click{
