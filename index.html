@@ -48,9 +48,10 @@
     setTimeout(function () {
       location.reload();
     }, 900000); // 900000밀리초 = 900초후 페이지 새로고침
-  </script>
 
-  <!-- <script>
+</script>
+  
+<!-- <script>
 var imgArray=new Array();
 		imgArray[0]="img/main1.jpg";
 		imgArray[1]="img/main2.jpg";
@@ -63,13 +64,13 @@ var imgArray=new Array();
 		  setTimeout(showImage,3000);
 		}
 </script> -->
-
-  <meta property="og:image" content="img/summer1.jpg">
-  <!-- 테스트 -->
-  <title>안디옥교회 여름성경학교</title>
-  <meta property="og:description" content="7.22(금)~23(토)">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="theme-color" content="#000000">
+		
+<meta property="og:image" content="img/thumb.jpg">
+<!-- 테스트 -->
+<title>안디옥교회 여름성경학교</title>
+<meta property="og:description" content="7/22(금) 15시 구미&서울안디옥교회">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="theme-color" content="#000000">
 </head>
 
 <!-- head 1차 정리 -->
@@ -79,130 +80,90 @@ var imgArray=new Array();
   <!-- <iframe src="" allow="autoplay" loop="infinite" id="audio" style="display:none"></iframe>
 	<audio src="./bgmFast.mp3" autoplay loop></audio> -->
   <!-- http://www.antiochi.net/ach30invite/bgmSlow.mp3 -->
-  <!-- 벚꽃 날리기 -->
+  <!-- 벚꽃 날리기
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   <script>
     $(window).load(function () {
       $('.page-content').sakura();
     });
   </script>
-  <script src="./blossom.js"></script>
+  <script src="./blossom.js"></script> -->
 
   <!-- 로딩 이미지 -->
   <div id="preloader" class="preloader-light">
     <div id="preload-spinner"></div>
     <h1></h1>
-    <p>잠시만 기다려 줘, 친구들!</p>
+    <p>잠시만 기다려주세용</p>
   </div>
 
   <!-- body start -->
   <div id="page-transitions" style="min-height: 592px;">
     <!-- <div id="menu-hider" style="transition: all 300ms ease 0s;"></div> -->
     <div class="page-content" style="transition: all 300ms ease 0s;">
-			<img class="summerImg" src="img/summer1.jpg" alt="여름성경학교 포스터">
-			<img class="summerImg" src="img/summer2.jpg" alt="여름성경학교 포스터">
-    </div>
-<div class="map_title">
-	<span>찾아오시는 길</span>
-</div>
-<div class="maps">
-	<div class="minimap"><a href="https://map.naver.com/v5/search/%EA%B5%AC%EB%AF%B8%EC%95%88%EB%94%94%EC%98%A5%EA%B5%90%ED%9A%8C/place/12448686?c=14287974.3080184,4310727.0029327,15,0,0,0,dh&isCorrectAnswer=true">구미(click)</a></div>
-	<div class="minimap">서울</div>
-	<div class="minimap">상주</div>
-	<div class="minimap">수원</div>
-	<div class="minimap">일산</div>
-</div>
-<div class="maps">
-	<div class="minimap">구미</div>
-	<div class="minimap">서울</div>
-	<div class="minimap">상주</div>
-	<div class="minimap">수원</div>
-	<div class="minimap">일산</div>
-</div>
-<div class="maps">
-	<div class="minimap">구미</div>
-	<div class="minimap">서울</div>
-	<div class="minimap">상주</div>
-	<div class="minimap">수원</div>
-	<div class="minimap">일산</div>
-</div>
-<div class="maps">
-	<div class="minimap">구미</div>
-	<div class="minimap">서울</div>
-	<div class="minimap">상주</div>
-	<div class="minimap">수원</div>
-	<div class="minimap">일산</div>
-</div>
+      <div class="main-img" id="thisone" >
+        <img id="2ndmain" src="img/배경.jpg" alt="second">
+      </div>  
+      <div id="first-part">
+        <img id="antioch"class="first-part reveal2" src="img/1. 사랑하는 친구야.png" alt="antioch">
+        <img id="welcoming"class="first-part reveal2" src="img/2. 여름성경학교.png" alt="antioch">
+        <img id="worship"class="first-part reveal2" src="img/3. 같이 가자.png" alt="antioch">
+        <img id="img2022"class="first-part reveal2" src="img/4. 네 마음의 진짜 주인.png" alt="antioch">
+      </div>
+      <div id="second-part">
+        <div id="test0">
+          <img id="door" class="second-part reveal" onclick="toggleImg()" style="cursor:pointer" src="img/4-1. 닫힌 문.png" alt="antioch">
+          <img id="click" class="second-part" onclick="toggleImg()" style="cursor:pointer" src="img/4-2. click.png" alt="antioch">
 
+        </div>
+
+        <script>
+          document.getElementById("door").addEventListener("touchend", toogleImg)
+  
+          function toggleImg() {
+            document.getElementById("click").style.visibility = "hidden"; 
+            document.getElementById("door").style.visibility = "hidden";
+          }
+        </script>
+        <div>
+          <img id=""class="second-part reveal" src="img/5. 바로 예수님이셔.png" alt="antioch">
+          <img id=""class="second-part reveal" src="img/6. 예수님을 주인으로.png" alt="antioch">
+          <img id="vertical1" id="vertical"class="second-part reveal" src="img/7. 예수님 만나러 가자.png" alt="antioch">
+          <img id="625"class="second-part reveal" src="img/8. 언제.png" alt="antioch">
+          <img id="gumi"class="second-part reveal" src="img/9. 어디서.png" alt="antioch">
+          <img id="vertical"class="second-part reveal" src="img/10. 장소 모서리가 둥근 사각형.png" alt="antioch">
+          <img id="shadow"class="second-part reveal" src="img/10-1. 우리 집에서 가까운 곳을.png" alt="antioch">
+          <img id="shadow"class="second-part reveal" src="img/11. 주제 및 교회로고.png" alt="antioch">
+        </div>
+      </div>
+
+
+
+
+
+      <!-- <div class="background-container" id="container2">
+				<img id="main2-1" class="main2 reveal" src="img/01.jpg" alt="main">
+				<img class="main2 reveal" src="img/02.jpg" alt="main">
+				<img class="main2 reveal" src="img/03.jpg" alt="main">
+				<img class="main2 reveal" src="img/04.jpg" alt="main">
+				<img class="main2 reveal" src="img/05.jpg" alt="main">
+				<img class="main2 reveal" src="img/06.jpg" alt="main">
+				<img class="main2 reveal" src="img/07.jpg" alt="main">
+				<img class="main2 reveal" src="img/08.jpg" alt="main">
+				<img id="main2-9"class="main2 reveal" src="img/09.jpg" alt="main">
+			</div> -->
 
       <script charset="UTF-8" src="./files/sdk.js"></script>
+      <!-- <script charset="UTF-8" src="./files/kakao.js"></script> -->
+      <!-- <script charset="UTF-8" src="./files/services.js"></script> -->
+      </div>
 
+      <!-- 오시는길 끝 -->
 
-
-      <!-- <div id="information" class="toggle-on;">
-        <div>
-          <a href="https://www.youtube.com/channel/UCleQoiUFmXaqlPu_GSzRNww/&amp;src=sdkpreparse" target="_blank"
-            class="shadow-small icon icon-round no-border icon-xs "><img src="./files/youtube-logo.png"
-              class="sns-logo"></a>
-        </div>
-        <div>
-          <a href="https://instagram.com/antioch1k?igshid=NWRhNmQxMjQ=/&amp;src=sdkpreparse" target="_blank"
-            class="shadow-small icon icon-round no-border icon-xs "><img src="./files/insta.png" class="sns-logo"></a>
-        </div>
-        <div>
-          <a href="https://soundcloud.com/wzpjxy1a1xfk?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing/&amp;src=sdkpreparse"
-            target="_blank" class="shadow-small icon icon-round no-border icon-xs "><img
-              src="./files/logo_soundcloud.jpg" class="sns-logo"></a>
-        </div>
-        <div>
-          <a href="http://antiochi.org/about/&amp;src=sdkpreparse" target="_blank"
-            class="shadow-small icon icon-round no-border icon-xs "><img src="./files/antioch.png" class="sns-logo"></a>
-        </div>
-        <div>
-          <a href="https://eden-garden.github.io/welcoming_worship/#" id="copyUrl"
-            class="shadow-small icon icon-round no-border icon-xs bg-tumblr"><i class="fa fa-link font-14"></i></a>
-
-        </div>
-        <div>
-          <a href="https://eden-garden.github.io/welcoming_worship/#"
-            class="shadow-small icon icon-round no-border icon-xs back-to-top" style="border-radius: 100%;"><i
-              class="fa fa-angle-up" style="background-color: #d2d4d7;"></i></a>
-        </div>
-        <div>
-          <textarea id="url" readonly="">https://eden-garden.github.io/lifemeaning</textarea>
-          <script>
-            $("#copyUrl").click(function () {
-              $("#url").select();
-              document.execCommand('copy');
-              alert("초대장 링크(url주소)를 복사 하였습니다.");
-            });
-          </script>
-        </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div> -->
-    </div>
-
-    <!-- 오시는길 끝 -->
-
-    <!-- 안내문구 끝 -->
-    <div class="footer footer-no-padding" style="transition: all 300ms ease 0s;">
-      <div class="footer-socials">
-
-        <!-- <a id="kakao-link-btn" href="javascript:;" class="shadow-small icon icon-round no-border icon-xs">
+      <!-- 안내문구 끝 -->
+      <div class="footer footer-no-padding" style="transition: all 300ms ease 0s;">
+        <div class="footer-socials">
+          
+          <!-- <a id="kakao-link-btn" href="javascript:;" class="shadow-small icon icon-round no-border icon-xs">
             <img src="./files/logo_kakaotalk.jpg" class="sns-logo"></a>
           <script type="text/javascript">
             // 사용할 앱의 JavaScript 키를 설정해 주세요. 1회만 설정-카카오내비랑 중복x
@@ -224,7 +185,7 @@ var imgArray=new Array();
             });
           </script> -->
 
-
+          
         <p class="center-text bottom-0"><img src="img/안디옥교회 푸터.png" class="sns-logo"></p>
         <p class="footer-text"> ©&nbsp;<script>
             document.write(new Date().getFullYear())
@@ -250,4 +211,3 @@ var imgArray=new Array();
 </body>
 
 </html>
-
