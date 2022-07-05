@@ -1316,11 +1316,11 @@ animation-name: slidein;
 }
 
 #test0{
-  position:relative;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 229px;
+  width: 420px;
 }
 
 #door{
@@ -1402,5 +1402,6 @@ animation-name: slidein;
 }
 
 .page-content{
-  background-image: url("img/배경.jpg");
+  background-image: url('../img/배경.jpg');
+  background-size: cover;
 }
