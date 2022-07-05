@@ -1018,6 +1018,7 @@ p {
 .main-img img {
   border-radius: 0px 0px 0px 0px;
   width: 100%;
+  height: 100%;
   margin-bottom: 0px;
 }
 
@@ -1189,19 +1190,6 @@ p {
 animation-name: slidein;
 }
 
-@keyframes slidein {
-  from {
-    margin-left: 100%;
-    width: 300%
-  }
-
-  to {
-    margin-left: 0%;
-    width: 100%;
-  }
-}
-
-
 .main2{
   width:100%;
 
@@ -1227,16 +1215,17 @@ animation-name: slidein;
 
 #thisone {
   position:absolute;
+  height: 100%;
 }
 .first-part{
   width: 100%;
   height:100%;
   z-index: 1;
 }
-#first-part{
+/* #first-part{
   margin-top:100px;
   margin-bottom:100px;
-}
+} */
 #shadow{
   margin-top: 50px;
 }
@@ -1267,91 +1256,39 @@ animation-name: slidein;
   margin-top: 300px;
   margin-bottom: 0;
 }
-#location-both{
-  margin-top: 100px;
-}
-#more{
-  margin-top: 50px;
-  margin-bottom: 0;
-}
-#information{
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  margin-left: 30px;
-  margin-top: 0px;
-  margin-bottom: 40px;
-}
-#구미시{
-  margin-top: 30px;
-}
-#강동구{
-  margin-top: 50px;
-}
+
 
 #antioch{
   animation-duration: 1.5s;
   animation-name: slidein;
   animation-iteration-count: finite;
 }
-@keyframes slidein {
-  from {
-    margin-right:100%;
-    width:1%
-  }
 
-  to {
-   margin-right:1%;
-   width:100%;
- }
-}
 #welcoming{
   animation-duration: 3s;
   animation-name: slidein;
   animation-iteration-count: finite;
 }
-@keyframes slidein {
-  from {
-    margin-right:100%;
-    width:1%
-  }
 
-  to {
-   margin-right:1%;
-   width:100%;
- }
-}
 #worship{
   animation-duration: 4.5s;
   animation-name: slidein;
   animation-iteration-count: finite;
 }
-@keyframes slidein {
-  from {
-    margin-right:100%;
-    width:1%
-  }
-
-  to {
-   margin-right:1%;
-   width:100%;
- }
-}
 
 #img2022{
+  position: relative;
   animation-duration: 6s;
   animation-name: slidein;
   animation-iteration-count: finite;
 }
 @keyframes slidein {
   from {
-    margin-right:100%;
-    width:1%
+    margin-bottom:70%;
   }
 
   to {
-   margin-right:1%;
-   width:100%;
+   margin-bottom:0%;
  }
 }
 
@@ -1375,6 +1312,7 @@ animation-name: slidein;
 
 #2ndmain{
   width:100%;
+  height: 100%;
 }
 #test0{
   position:relative;
@@ -1390,11 +1328,15 @@ animation-name: slidein;
   /* height:100%;
   width: 100%; */
 }
+
+#cross{
+  position: absolute;
+}
+
 #click{
-  z-index: 1;
-  width:140px;
-  height:80px;
-  margin-top: -70px;
+  width:120px;
+  height:60px;
+  /* margin-top: -70px; */
   animation: blink-effect 1.75s ease-in-out infinite;
 }
 @keyframes blink-effect {
@@ -1418,4 +1360,45 @@ animation-name: slidein;
   animation-iteration-count:infinite;
   animation-timing-function:step-end;
   */
+}
+
+.hidden {
+  visibility: hidden;
+  transition: all 0.3s
+}
+
+.hidden2 {
+  visibility: hidden;
+  width:0px;
+  transition: all 2s ease-in-out;
+}
+
+#vertical{
+  position: absolute;
+  /* height:100%;
+  width: 100%; */
+}
+#shadow{
+  z-index: 1;
+  animation: blink-effect 1.75s ease-in-out infinite;
+  /* margin-top: -70px; */
+}
+
+#location {
+  margin: 30px;
+  text-align: center;
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  
+}
+
+.grid2{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-auto-rows: minmax(auto, auto);
+  gap: 10px;
 }
