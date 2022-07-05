@@ -1332,7 +1332,7 @@ animation-name: slidein;
 }
 
 #click{
-  width:120px;
+  width:100%;
   height:auto;
   /* margin-top: -70px; */
   animation: blink-effect 1.75s ease-in-out infinite;
@@ -1399,4 +1399,8 @@ animation-name: slidein;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-auto-rows: minmax(auto, auto);
   gap: 10px;
+}
+
+.page-content{
+  background-image: url("img/배경.jpg");
 }
