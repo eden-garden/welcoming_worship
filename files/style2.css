@@ -1231,7 +1231,7 @@ animation-name: slidein;
 }
 .second-part{
   width:100%;
-  height: 100%;
+  height:100%;
 }
 
 .third-part{
@@ -1316,17 +1316,14 @@ animation-name: slidein;
 }
 #test0{
   position:relative;
-  height: 300px;
-  width:100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 230px;
 }
 
 #door{
   position: absolute;
-  /* height:100%;
-  width: 100%; */
 }
 
 #cross{
@@ -1335,7 +1332,7 @@ animation-name: slidein;
 
 #click{
   width:120px;
-  height:60px;
+  height:auto;
   /* margin-top: -70px; */
   animation: blink-effect 1.75s ease-in-out infinite;
 }
@@ -1401,4 +1398,8 @@ animation-name: slidein;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-auto-rows: minmax(auto, auto);
   gap: 10px;
+}
+
+.region {
+  border-radius: 90p%;
 }
