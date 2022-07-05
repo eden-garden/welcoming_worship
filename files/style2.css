@@ -1314,12 +1314,13 @@ animation-name: slidein;
   width:100%;
   height: 100%;
 }
+
 #test0{
   position:relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 230px;
+  height: 229px;
 }
 
 #door{
@@ -1398,8 +1399,4 @@ animation-name: slidein;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-auto-rows: minmax(auto, auto);
   gap: 10px;
-}
-
-.region {
-  border-radius: 90p%;
 }
