@@ -1257,6 +1257,7 @@ animation-name: slidein;
 
 
 #antioch{
+  margin-top: 200px;
   animation-duration: 1.5s;
   animation-name: slidein;
   animation-iteration-count: finite;
@@ -1408,7 +1409,30 @@ animation-name: slidein;
   background-image: url('../img/배경.jpg');
   background-size: cover;
 }
+
 #jesus{
   transition: all 2s ease-in-out ;
 }
 
+.location {
+  text-align: center;
+}
+
+.img-address {
+  width: 232px;
+}
+
+.img-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-btn {
+  width:109px;
+  margin: 20px;
+}
+
+.img-back {
+  width: 85px;
+}

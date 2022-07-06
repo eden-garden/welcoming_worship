@@ -135,8 +135,7 @@ var imgArray=new Array();
         <div>
           <img id="jesus"class="second-part hidden" src="img/5. 바로 예수님이셔.png" alt="antioch">
           <img id="lord" class="second-part hidden" src="img/6. 예수님을 주인으로.png" alt="antioch">
-          <img id="answer" class="second-part hidden" src="./img/궁금해.png" style="cursor:pointer" onclick="toggleImg2()">
-
+          <img id="answer" class="second-part hidden" src="./img/궁금해.png" alt="curiosity button" style="cursor:pointer" onclick="toggleImg2()">
           <img id="vertical1" class="second-part hidden"  src="img/7. 예수님 만나러 가자.png" alt="antioch">
           <img id="625"class="second-part hidden" src="img/8. 언제.png" alt="antioch">
           <img id="gumi"class="second-part hidden" src="img/9. 어디서.png" alt="antioch">
@@ -144,14 +143,13 @@ var imgArray=new Array();
             document.getElementById("answer").addEventListener("touchend", toggleImg2)
     
             function toggleImg2() {
-              document.getElementById("answer").classList.remove("blink")
-
-              document.getElementById("answer").classList.add("hidden")
 
               document.getElementById("vertical1").classList.remove("hidden")
               document.getElementById("625").classList.remove("hidden")
               document.getElementById("gumi").classList.remove("hidden")
               document.getElementById("lastPart").classList.remove("hidden")
+              document.getElementById("answer").classList.add("hidden")
+              document.getElementById("answer").classList.remove("blink")
               // document.getElementById("click").style.visibility = "hidden"; 
               // document.getElementById("door").style.visibility = "hidden";
             }
@@ -185,9 +183,12 @@ var imgArray=new Array();
               </div>
             </div>
             <div id="mygumi" class="location" style="display:none">
-              <img id="" class="second-part" src="img/구미안디옥교회주소.png" alt="antioch">
-              <img id="" class="second-part" src="img/연락하기.png" alt="antioch">
-              <img id="" class="second-part" src="img/찾아가기.png" alt="antioch">
+              <img id="" class="second-part img-address" src="img/구미안디옥교회주소.png" alt="antioch">
+            <div class="img-flex"> 
+              <img id="" class="second-part img-btn" src="img/연락하기.png" alt="antioch">
+              <img id="" class="second-part img-btn" src="img/찾아가기.png" alt="antioch">
+            </div>
+            <img id="" class="second-part img-back" src="img/돌아가기.png" alt="antioch">
             </div>
             
             <script>
