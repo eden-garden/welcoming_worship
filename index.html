@@ -115,23 +115,6 @@ var imgArray=new Array();
           <img id="door" class="second-part reveal" onclick="toggleImg()" style="cursor:pointer" src="img/4-1. 닫힌 문.png" alt="antioch">
           <img id="click" class="second-part reveal" onclick="toggleImg()" style="cursor:pointer" src="img/4-2. click.png" alt="antioch">
         </div>
-
-        <script>
-          document.getElementById("door").addEventListener("touchend", toggleImg)
-  
-          function toggleImg() {
-            document.getElementById("click").style.display = "none"
-            document.getElementById("door").classList.add("hidden2")
-            document.getElementById("cross").classList.remove("hidden")
-            document.getElementById("jesus").classList.remove("hidden")
-            document.getElementById("lord").classList.remove("hidden")
-            document.getElementById("answer").classList.remove("hidden")
-            document.getElementById("answer").classList.add("blink")
-
-            // document.getElementById("click").style.visibility = "hidden"; 
-            // document.getElementById("door").style.visibility = "hidden";
-          }
-        </script>
         <div>
           <img id="jesus"class="second-part hidden" src="img/5. 바로 예수님이셔.png" alt="antioch">
           <img id="lord" class="second-part hidden" src="img/6. 예수님을 주인으로.png" alt="antioch">
@@ -139,21 +122,7 @@ var imgArray=new Array();
           <img id="vertical1" class="second-part hidden"  src="img/7. 예수님 만나러 가자.png" alt="antioch">
           <img id="625"class="second-part hidden" src="img/8. 언제.png" alt="antioch">
           <img id="gumi"class="second-part hidden" src="img/9. 어디서.png" alt="antioch">
-          <script>
-            document.getElementById("answer").addEventListener("touchend", toggleImg2)
-    
-            function toggleImg2() {
-
-              document.getElementById("vertical1").classList.remove("hidden")
-              document.getElementById("625").classList.remove("hidden")
-              document.getElementById("gumi").classList.remove("hidden")
-              document.getElementById("lastPart").classList.remove("hidden")
-              document.getElementById("answer").classList.add("hidden")
-              document.getElementById("answer").classList.remove("blink")
-              // document.getElementById("click").style.visibility = "hidden"; 
-              // document.getElementById("door").style.visibility = "hidden";
-            }
-          </script>
+          
           <div id="lastPart" class="second-part hidden">
             <img id="shadow"class="second-part reveal" src="img/10-2. 우리 집에서 가까운 곳을.png" alt="antioch">
             <img id="vertical"class="second-part reveal" src="img/10. 장소 모서리가 둥근 사각형.png" alt="antioch">
@@ -182,7 +151,7 @@ var imgArray=new Array();
                 <img id=""class="second-part region" onclick="toggleImg3('pohang')" src="img/포항.png" alt="antioch">
               </div>
             </div>
-            <div id="mygumi" class="location" style="display:none">
+            <div id="mygumi" class="" style="display:none">
               <img id="" class="second-part img-address" src="img/구미안디옥교회주소.png" alt="antioch">
             <div class="img-flex"> 
               <img id="" class="second-part img-btn" src="img/연락하기.png" alt="antioch">
@@ -190,7 +159,40 @@ var imgArray=new Array();
             </div>
             <img id="" class="second-part img-back" src="img/돌아가기.png" alt="antioch">
             </div>
-            
+            <!-- 문 열기 click버튼 -->
+            <script>
+              document.getElementById("door").addEventListener("touchend", toggleImg)
+      
+              function toggleImg() {
+                document.getElementById("click").style.display = "none"
+                document.getElementById("door").classList.add("hidden2")
+                document.getElementById("cross").classList.remove("hidden")
+                document.getElementById("jesus").classList.remove("hidden")
+                document.getElementById("lord").classList.remove("hidden")
+                document.getElementById("answer").classList.remove("hidden")
+                document.getElementById("answer").classList.add("blink")
+    
+                // document.getElementById("click").style.visibility = "hidden"; 
+                // document.getElementById("door").style.visibility = "hidden";
+              }
+            </script>
+            <!-- 궁금해 클릭시  -->
+            <script>
+              document.getElementById("answer").addEventListener("touchend", toggleImg2)
+      
+              function toggleImg2() {
+  
+                document.getElementById("vertical1").classList.remove("hidden")
+                document.getElementById("625").classList.remove("hidden")
+                document.getElementById("gumi").classList.remove("hidden")
+                document.getElementById("lastPart").classList.remove("hidden")
+                document.getElementById("answer").classList.add("hidden")
+                document.getElementById("answer").classList.remove("blink")
+                // document.getElementById("click").style.visibility = "hidden"; 
+                // document.getElementById("door").style.visibility = "hidden";
+              }
+            </script>
+            <!-- 지역 별 클릭 시 지도&연락처 -->
             <script>
               function toggleImg3(loc){
                 document.getElementById("location").style.display = "none"

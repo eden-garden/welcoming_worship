@@ -1414,18 +1414,18 @@ animation-name: slidein;
   transition: all 2s ease-in-out ;
 }
 
-.location {
-  text-align: center;
-}
-
 .img-address {
   width: 232px;
+  margin: auto;
+  margin-top: 60px;
+  margin-bottom: 20px;
 }
 
 .img-flex {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 20px;
 }
 
 .img-btn {
@@ -1435,4 +1435,6 @@ animation-name: slidein;
 
 .img-back {
   width: 85px;
+  margin: auto;
+  margin-bottom: 0px;
 }
