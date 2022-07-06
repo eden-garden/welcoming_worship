@@ -106,6 +106,7 @@ var imgArray=new Array();
         <img id="antioch"class="first-part " src="img/1. 사랑하는 친구야.png" alt="antioch">
         <img id="welcoming"class="first-part " src="img/2. 여름성경학교.png" alt="antioch">
         <img id="worship"class="first-part " src="img/3. 같이 가자.png" alt="antioch">
+        <a href="tel:01071533922"><img src="./img/3. 같이 가자.png" alt="test"></a>
         <img id="img2022"class="first-part " src="img/4. 네 마음의 진짜 주인.png" alt="antioch">
       </div>
       <div id="second-part">
@@ -123,50 +124,79 @@ var imgArray=new Array();
             document.getElementById("door").classList.add("hidden2")
             document.getElementById("cross").classList.remove("hidden")
             document.getElementById("jesus").classList.remove("hidden")
+            document.getElementById("lord").classList.remove("hidden")
+            document.getElementById("answer").classList.remove("hidden")
+            document.getElementById("answer").classList.add("blink")
+
             // document.getElementById("click").style.visibility = "hidden"; 
             // document.getElementById("door").style.visibility = "hidden";
           }
         </script>
         <div>
           <img id="jesus"class="second-part hidden" src="img/5. 바로 예수님이셔.png" alt="antioch">
-          <img id=""class="second-part reveal" src="img/6. 예수님을 주인으로.png" alt="antioch">
-          <img id="vertical1" id="vertical"class="second-part reveal" src="img/7. 예수님 만나러 가자.png" alt="antioch">
-          <img id="625"class="second-part reveal" src="img/8. 언제.png" alt="antioch">
-          <img id="gumi"class="second-part reveal" src="img/9. 어디서.png" alt="antioch">
-          <div>
+          <img id="lord" class="second-part hidden" src="img/6. 예수님을 주인으로.png" alt="antioch">
+          <img id="answer" class="second-part hidden" src="./img/궁금해.png" style="cursor:pointer" onclick="toggleImg2()">
+
+          <img id="vertical1" class="second-part hidden"  src="img/7. 예수님 만나러 가자.png" alt="antioch">
+          <img id="625"class="second-part hidden" src="img/8. 언제.png" alt="antioch">
+          <img id="gumi"class="second-part hidden" src="img/9. 어디서.png" alt="antioch">
+          <script>
+            document.getElementById("answer").addEventListener("touchend", toggleImg2)
+    
+            function toggleImg2() {
+              document.getElementById("answer").classList.remove("blink")
+
+              document.getElementById("answer").classList.add("hidden")
+
+              document.getElementById("vertical1").classList.remove("hidden")
+              document.getElementById("625").classList.remove("hidden")
+              document.getElementById("gumi").classList.remove("hidden")
+              document.getElementById("lastPart").classList.remove("hidden")
+              // document.getElementById("click").style.visibility = "hidden"; 
+              // document.getElementById("door").style.visibility = "hidden";
+            }
+          </script>
+          <div id="lastPart" class="second-part hidden">
             <img id="shadow"class="second-part reveal" src="img/10-2. 우리 집에서 가까운 곳을.png" alt="antioch">
             <img id="vertical"class="second-part reveal" src="img/10. 장소 모서리가 둥근 사각형.png" alt="antioch">
             <div id="location" class="reveal">
               <div class="grid">
-                <a href="https://map.naver.com/v5/search/%EA%B5%AC%EB%AF%B8%EC%95%88%EB%94%94%EC%98%A5%EA%B5%90%ED%9A%8C/place/12448686?c=14287974.3080184,4310727.0029327,15,0,0,0,dh&isCorrectAnswer=true">
-                  <img id=""class="second-part region" src="img/구미.png" alt="antioch">
-                </a>
-                <a href="https://map.naver.com/v5/search/%EC%84%9C%EC%9A%B8%EC%95%88%EB%94%94%EC%98%A5%EA%B5%90%ED%9A%8C/place/18898428?c=14152214.8233966,4514616.3021247,15,0,0,0,dh&placePath=%3Fentry%253Dbmp" target="_blank" rel="noopener noreferrer">
-                  <img id=""class="second-part region" src="img/서울.png" alt="antioch">
-                </a>
-                <a href="https://map.naver.com/v5/search/%EB%B6%84%EB%8B%B9%EC%95%88%EB%94%94%EC%98%A5%EA%B5%90%ED%9A%8C/place/1544335251?c=14152455.9414136,4496853.4029574,15,0,0,0,dh&placePath=%3Fentry%253Dbmp" target="_blank" rel="noopener noreferrer">
-                  <img id=""class="second-part region" src="img/분당.png" alt="antioch">
-                </a>
+                <img id=""class="second-part region" onclick="toggleImg3('mygumi')" src="img/구미.png" alt="antioch">
+                <img id=""class="second-part region" onclick="toggleImg3('seoul')" src="img/서울.png" alt="antioch">
+                <img id=""class="second-part region" onclick="toggleImg3('bundang')" src="img/분당.png" alt="antioch">
               </div>
               <div class="grid2">
-                <img id=""class="second-part region" src="img/강서.png" alt="antioch">
-                <img id=""class="second-part region" src="img/거창.png" alt="antioch">
-                <img id=""class="second-part region" src="img/경주.png" alt="antioch">
-                <img id=""class="second-part region" src="img/대전.png" alt="antioch">
-                <img id=""class="second-part region" src="img/부여.png" alt="antioch">
-                <img id=""class="second-part region" src="img/북대구.png" alt="antioch">
-                <img id=""class="second-part region" src="img/북부산.png" alt="antioch">
-                <img id=""class="second-part region" src="img/상주.png" alt="antioch">
-                <img id=""class="second-part region" src="img/서대구.png" alt="antioch">
-                <img id=""class="second-part region" src="img/성주.png" alt="antioch">
-                <img id=""class="second-part region" src="img/수원.png" alt="antioch">
-                <img id=""class="second-part region" src="img/영주.png" alt="antioch">
-                <img id=""class="second-part region" src="img/일산.png" alt="antioch">
-                <img id=""class="second-part region" src="img/창원.png" alt="antioch">
-                <img id=""class="second-part region" src="img/청도.png" alt="antioch">
-                <img id=""class="second-part region" src="img/포항.png" alt="antioch">
+                <img id=""class="second-part region" onclick="toggleImg3('gangseo')" src="img/강서.png" alt="antioch">
+                <img id=""class="second-part region" onclick="toggleImg3('geochang')" src="img/거창.png" alt="antioch">
+                <img id=""class="second-part region" onclick="toggleImg3('gyeongju')" src="img/경주.png" alt="antioch">
+                <img id=""class="second-part region" onclick="toggleImg3('daejeon')" src="img/대전.png" alt="antioch">
+                <img id=""class="second-part region" onclick="toggleImg3('buyeo')" src="img/부여.png" alt="antioch">
+                <img id=""class="second-part region" onclick="toggleImg3('bukdaegu')" src="img/북대구.png" alt="antioch">
+                <img id=""class="second-part region" onclick="toggleImg3('bukbusan')" src="img/북부산.png" alt="antioch">
+                <img id=""class="second-part region" onclick="toggleImg3('sangju')" src="img/상주.png" alt="antioch">
+                <img id=""class="second-part region" onclick="toggleImg3('seodaegu')" src="img/서대구.png" alt="antioch">
+                <img id=""class="second-part region" onclick="toggleImg3('seongju')" src="img/성주.png" alt="antioch">
+                <img id=""class="second-part region" onclick="toggleImg3('suwon')" src="img/수원.png" alt="antioch">
+                <img id=""class="second-part region" onclick="toggleImg3('yeongju')" src="img/영주.png" alt="antioch">
+                <img id=""class="second-part region" onclick="toggleImg3('ilsan')" src="img/일산.png" alt="antioch">
+                <img id=""class="second-part region" onclick="toggleImg3('changwon')" src="img/창원.png" alt="antioch">
+                <img id=""class="second-part region" onclick="toggleImg3('cheongdo')" src="img/청도.png" alt="antioch">
+                <img id=""class="second-part region" onclick="toggleImg3('pohang')" src="img/포항.png" alt="antioch">
               </div>
             </div>
+            <div id="mygumi" class="location" style="display:none">
+              <img id="" class="second-part" src="img/구미안디옥교회주소.png" alt="antioch">
+              <img id="" class="second-part" src="img/연락하기.png" alt="antioch">
+              <img id="" class="second-part" src="img/찾아가기.png" alt="antioch">
+            </div>
+            
+            <script>
+              function toggleImg3(loc){
+                document.getElementById("location").style.display = "none"
+                document.getElementById(loc).style.display = ""
+              }
+            </script>
+
           </div>
           <img id=""class="second-part reveal" src="img/11. 주제 및 교회로고.png" alt="antioch">
 

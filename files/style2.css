@@ -1229,13 +1229,14 @@ animation-name: slidein;
 .second-part{
   width:100%;
   height:100%;
+  transition: all 2s ease-in-out;
 }
 
 .third-part{
   width:100%;
   height: 100%;
 }
-
+/* 
 #625, #gumi{
   margin: 0;
 }
@@ -1252,7 +1253,7 @@ animation-name: slidein;
 #prvideo{
   margin-top: 300px;
   margin-bottom: 0;
-}
+} */
 
 
 #antioch{
@@ -1274,6 +1275,7 @@ animation-name: slidein;
 }
 
 #img2022{
+  margin-top: 200px;
   position: relative;
   animation-duration: 4.5s;
   animation-name: slidein;
@@ -1342,7 +1344,7 @@ animation-name: slidein;
     opacity: 100%;
   }
   50% {
-    opacity: 0;
+    opacity: 30%;
   }
   100%{
     opacity: 100%;
@@ -1350,7 +1352,7 @@ animation-name: slidein;
 }
 
 .blink {
-  animation: blink-effect 1s step-end infinite;
+  animation: blink-effect 1.75s ease-in-out infinite;
 
   /*
   animation-name: blink-effect;
@@ -1361,8 +1363,8 @@ animation-name: slidein;
 }
 
 .hidden {
-  visibility: hidden;
-  transition: all 0.3s
+  opacity:0;
+  /* visibility: hidden; */
 }
 
 .hidden2 {
@@ -1406,3 +1408,7 @@ animation-name: slidein;
   background-image: url('../img/배경.jpg');
   background-size: cover;
 }
+#jesus{
+  transition: all 2s ease-in-out ;
+}
+
