@@ -1275,7 +1275,7 @@ animation-name: slidein;
 
 #img2022{
   position: relative;
-  animation-duration: 6s;
+  animation-duration: 4.5s;
   animation-name: slidein;
   animation-iteration-count: finite;
 }
