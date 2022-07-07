@@ -1257,7 +1257,7 @@ animation-name: slidein;
 
 
 #antioch{
-  margin-top: 200px;
+  margin-top: 150px;
   animation-duration: 1.5s;
   animation-name: slidein;
   animation-iteration-count: finite;
@@ -1320,6 +1320,7 @@ animation-name: slidein;
   align-items: center;
   justify-content: center;
   height: 300px;
+  margin-bottom: 0;
 }
 
 #door{
@@ -1362,7 +1363,11 @@ animation-name: slidein;
   animation-timing-function:step-end;
   */
 }
-
+#answer{
+  width: 40%;
+  height: 40%;
+  margin: auto;
+}
 .hidden {
   opacity:0;
   /* visibility: hidden; */
@@ -1380,6 +1385,10 @@ animation-name: slidein;
   display: none;
   transition: all 2s;
 }
+
+.mb-30px{
+  margin-bottom: 30px;
+}  
 
 #vertical{
   position: absolute;
@@ -1402,6 +1411,7 @@ animation-name: slidein;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 10px;
   margin-top: 55px;
+  margin-bottom: 30px;
 }
 
 .grid2{
@@ -1409,6 +1419,8 @@ animation-name: slidein;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-auto-rows: minmax(auto, auto);
   gap: 10px;
+  row-gap: 30px;
+  margin: auto;
 }
 
 .page-content{
@@ -1417,6 +1429,7 @@ animation-name: slidein;
 }
 
 #jesus{
+  margin-top: 0;
   transition: all 2s ease-in-out ;
 }
 
