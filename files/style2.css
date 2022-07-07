@@ -1319,7 +1319,7 @@ animation-name: slidein;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 300px;
+  height: 250px;
   margin-bottom: 0;
 }
 
@@ -1367,6 +1367,7 @@ animation-name: slidein;
   width: 40%;
   height: 40%;
   margin: auto;
+  margin-bottom: 100px;
 }
 .hidden {
   opacity:0;
@@ -1429,10 +1430,12 @@ animation-name: slidein;
 }
 
 #jesus{
-  margin-top: 0;
+  margin-bottom: 100px;
   transition: all 2s ease-in-out ;
 }
-
+#lord{
+  margin-bottom: 100px;
+}
 .img-address {
   width: 232px;
   margin: auto;
